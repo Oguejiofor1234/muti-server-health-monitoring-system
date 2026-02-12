@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Logs
+logs/
+*.log
+*.csv
+
+# Config with passwords
+config_local.py
+
+# SSH Keys
+*.pem
+*.key
+id_rsa*
