@@ -26,9 +26,9 @@ THRESHOLDS = {
 EMAIL_CONFIG = {
     'smtp_server': 'smtp.gmail.com',
     'smtp_port': 587,
-    'sender_email': 'miracle2cool247@gmail.com',
-    'sender_password': 'xcxh aedo bzlw egmm',
-    'recipient_email': 'oguejiofor.mbah@fuoye.edu.ng'
+    'sender_email': 'your-email@gmail.com',
+    'sender_password': 'your-app-password',  # Gmail App Password
+    'recipient_email': 'alerts@example.com'
 
 }
 # Monitoring configuration
