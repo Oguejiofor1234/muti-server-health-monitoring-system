@@ -4,15 +4,15 @@ import os
 SERVERS = {
     'web-server':{
         'hostname': '127.0.0.1',   # Update with your VM's IP
-        'port': 2222,
-        'username': 'vagrant',
-        'key_filename': os.path.expanduser('~/.ssh/vm_key')
+        'port': 22,  # Update with your port
+        'username': 'your-username', # Update with your username
+        'key_filename': os.path.expanduser('~/.ssh/monitoring_key')  # Update with your key
     },
     'database': {
-        'hostname': '127.0.0.1',    # Update with your VM's IP
-        'port': 2200,
-        'username': 'vagrant',
-        'key_filename': os.path.expanduser('~/.ssh/vm_key')
+        'hostname': '127.0.0.1',    # Update as in web-server
+        'port': 20,
+        'username': 'your-username',
+        'key_filename': os.path.expanduser('~/.ssh/monitoring_key')
     }    
 }
 
