@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏥 Remote Multi-Server Health Monitoring System
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
@@ -43,3 +44,7 @@ An automated monitoring system that:
 ## 📊 Architecture
 
 ### System Design
+=======
+# muti-server-health-monitoring-system
+Automated multi-server health  monitoring with email alert
+>>>>>>> 
