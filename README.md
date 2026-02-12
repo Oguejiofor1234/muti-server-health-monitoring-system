@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏥 Remote Multi-Server Health Monitoring System
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
@@ -44,7 +43,45 @@ An automated monitoring system that:
 ## 📊 Architecture
 
 ### System Design
-=======
-# muti-server-health-monitoring-system
-Automated multi-server health  monitoring with email alert
->>>>>>> 
+
+
+### Data Flow
+
+```
+1. Connect → SSH to each server
+2. Collect → Execute psutil commands remotely
+3. Analyze → Compare metrics vs thresholds
+4. Alert → Send email if threshold breached
+5. Log → Save all data to CSV
+6. Repeat → Every 60 seconds (configurable)
+```
+
+---
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **Python 3.8+** | Core programming language |
+| **Paramiko** | SSH client for remote connections |
+| **psutil** | System metrics collection |
+| **smtplib** | Email alert delivery |
+| **CSV** | Data logging and storage |
+| **Vagrant** | VM management (testing) |
+
+---
+
+## 📋 Prerequisites
+
+### Required Software
+
+- Python 3.8 or higher
+- SSH access to servers you want to monitor
+- Gmail account (for email alerts)
+
+### Required Python Packages
+```bash
+pip install paramiko psutil
+```
