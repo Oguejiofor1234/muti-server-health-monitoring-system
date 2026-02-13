@@ -6,7 +6,8 @@
 
 > Automated health monitoring system that tracks CPU, memory, and disk usage across multiple servers via SSH and sends real-time email alerts when thresholds are breached.
 
-![Demo Screenshot](screenshots/demo.png)
+![Console Output](screenshots/health_monitoring-demo.png)
+![CPU Email Alert](screenshots/CPU_Email_alert.png)
 
 ## 🎯 Overview
 
