@@ -8,6 +8,8 @@
 
 ![Console Output](screenshots/health_monitoring-demo.png)
 ![CPU Email Alert](screenshots/CPU_Email_alert.png)
+![Memory Email Alert](screenshots/MEMORY_web_Email_alert.png)
+![Log file](screenshots/Libeoffice_health_metrics_csv.png)
 
 ## 🎯 Overview
 
