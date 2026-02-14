@@ -254,32 +254,8 @@ sudo systemctl status health-monitor
 
 ## 📁 Project Structure
 
-health-monitoring-system/
-│
-├── health_monitor.py          # Main monitoring script
-├── config.py                  # Configuration file (servers, thresholds, email)
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
-│
-├── tests/                     # Testing utilities
-│   ├── test_ssh.py           # Test SSH connections
-│   ├── test_email.py         # Test email alerts
-│   └── quick_test.py         # Run single check
-│
-├── logs/                      # Generated log files (git-ignored)
-│   ├── health_metrics.csv    # Metrics data
-│   └── alerts.log            # Alert history
-│
-├── screenshots/               # Documentation images
-│   ├── demo.png
-│   └── alert-email.png
-│
-├── docs/                      # Additional documentation
-│   ├── ARCHITECTURE.md       # Detailed architecture
-│   ├── TROUBLESHOOTING.md    # Common issues and solutions
-│   └── DEPLOYMENT.md         # Production deployment guide
-│
-└── .gitignore                # Git ignore file
+![Project Structure](screenshots/Project_structure.png)
+
 
 
 
