@@ -4,15 +4,15 @@ import os
 SERVERS = {
     'web-server':{
         'hostname': '127.0.0.1',   # Update with your VM's IP
-        'port': 22,  # Update with your port
-        'username': 'your-username', # Update with your username
-        'key_filename': os.path.expanduser('~/.ssh/monitoring_key')  # Update with your key
+        'port': 2220,  # Update with your port
+        'username': 'vagrant', # Update with your username
+        'key_filename': os.path.expanduser('~/.ssh/vm_key')  # Update with your key
     },
     'database': {
         'hostname': '127.0.0.1',    # Update as in web-server
-        'port': 20,
-        'username': 'your-username',
-        'key_filename': os.path.expanduser('~/.ssh/monitoring_key')
+        'port': 2200,
+        'username': 'vagrant',
+        'key_filename': os.path.expanduser('~/.ssh/vm_key')
     }    
 }
 
@@ -26,10 +26,17 @@ THRESHOLDS = {
 EMAIL_CONFIG = {
     'smtp_server': 'smtp.gmail.com',
     'smtp_port': 587,
-    'sender_email': 'your-email@gmail.com',
-    'sender_password': 'your-app-password',  # Gmail App Password
-    'recipient_email': 'alerts@example.com'
+    'sender_email': 'miracle2cool247@gmail.com',
+    'sender_password': 'xcxh aedo bzlw egmm',  # Gmail App Password
+    'recipient_email': 'oguejiofor.mbah@fuoye.edu.ng'
 
+}
+
+# Slack Configuration (NEW - Slack Notification Feature!)
+SLACK_CONFIG = {
+    'enabled': False,  # Set to True to enable Slack notifications
+    'webhook_url': 'https://hooks.slack.com/services/YOUR/WEBHOOK/URL',
+    'send_email_also': True  # If True, sends both email and Slack
 }
 # Monitoring configuration
 MONITORING_CONFIG = {
