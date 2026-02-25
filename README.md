@@ -167,6 +167,44 @@ EMAIL_CONFIG = {
     'recipient_email': 'alerts@example.com'
 }
 ```
+### Slack Notification Setup (Optional)
+
+The system can send alerts to Slack channels in addition to or instead of email.
+
+#### 1. Create Slack Incoming Webhook
+
+1. Go to https://api.slack.com/apps
+2. Click "Create New App" → "From scratch"
+3. Name: "Health Monitor Bot"
+4. Choose your workspace
+5. Click "Incoming Webhooks" → Toggle "On"
+6. Click "Add New Webhook to Workspace"
+7. Select channel (e.g., #server-alerts)
+8. Copy the webhook URL
+
+#### 2. Configure Slack in config.py
+```python
+SLACK_CONFIG = {
+    'enabled': True,  # Enable Slack notifications
+    'webhook_url': 'https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXX',
+    'send_email_also': True  # Send both Slack and email
+}
+```
+
+#### 3. Test Slack Integration
+```bash
+python3 test_slack.py
+```
+
+You should see a test message in your Slack channel!
+
+#### 4. Slack Message Features
+
+- 🔴 Critical alerts (3+ threshold breaches)
+- 🟡 Warning alerts (2 threshold breaches)
+- 🟠 Single threshold breach
+- Formatted with server details and current metrics
+- Includes timestamp and emoji indicators
 ### Installing psutil on Monitored Servers
 ```bash
 # SSH into each server
