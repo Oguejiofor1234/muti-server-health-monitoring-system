@@ -5,7 +5,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/YOUR-USERNAME/health-monitoring-system/graphs/commit-activity)
 
 > Automated health monitoring system that tracks CPU, memory, and disk usage across multiple servers via SSH and sends real-time email alerts when thresholds are breached.
-
+![Slack Message Alert](screenshots/Slack_monitoring_Bot2026-02-25_14-19.png)
 ![Console Output](screenshots/health_monitoring-demo.png)
 ![CPU Email Alert](screenshots/CPU_Email_alert.png)
 ![Memory Email Alert](screenshots/MEMORY_web_Email_alert.png)
