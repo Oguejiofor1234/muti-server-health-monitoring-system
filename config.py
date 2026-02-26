@@ -4,7 +4,7 @@ import os
 SERVERS = {
     'web-server':{
         'hostname': '127.0.0.1',   # Update with your VM's IP
-        'port': 2220,  # Update with your port
+        'port': 2222,  # Update with your port
         'username': 'vagrant', # Update with your username
         'key_filename': os.path.expanduser('~/.ssh/vm_key')  # Update with your key
     },
@@ -24,6 +24,7 @@ THRESHOLDS = {
 }
 # Email Configuration
 EMAIL_CONFIG = {
+    'enabled': True,
     'smtp_server': 'smtp.gmail.com',
     'smtp_port': 587,
     'sender_email': 'miracle2cool247@gmail.com',
@@ -34,8 +35,8 @@ EMAIL_CONFIG = {
 
 # Slack Configuration (NEW - Slack Notification Feature!)
 SLACK_CONFIG = {
-    'enabled': False,  # Set to True to enable Slack notifications
-    'webhook_url': 'https://hooks.slack.com/services/YOUR/WEBHOOK/URL',
+    'enabled': True,  # Set to True to enable Slack notifications
+    'webhook_url': 'YOUR/WEBHOOT/URL',
     'send_email_also': True  # If True, sends both email and Slack
 }
 # Monitoring configuration
